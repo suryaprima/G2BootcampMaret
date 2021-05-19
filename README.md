@@ -1,4 +1,4 @@
 # G2BootcampMaret
 
 
-## Ini repository G2 Academy - Bootcamp Fullstack
+Ini repository G2 Academy - Bootcamp Fullstack
