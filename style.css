@@ -1,0 +1,406 @@
+body {
+  overflow-x: hidden;
+}
+
+.header1-mobile,
+.header1-tablet {
+  display: none;
+}
+
+.main-footer-mobile,
+.main-footer-tablet,
+.body-tablet,
+.body-mobile {
+  display: none;
+}
+
+.header1,
+.header-search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header1,
+.main-footer{
+  min-width: 700px
+  overflow: hidden;
+}
+
+.header-logo {
+  display: inline-block;
+  width: 145px;
+  min-width: 145px;
+  height: 32px;
+  background-image: url("https://ecs7.tokopedia.net/assets-tokopedia-lite/v2/zeus/production/e5b8438b.svg");
+}
+
+.header-category {
+  padding: 5px;
+  margin: 5px 15px;
+}
+
+.header-category:hover {
+  background-color: lightgray;
+  border-radius: 4px;
+}
+
+.header-search {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding-left: 10px;
+  flex: 1;
+}
+
+.header-search > input {
+  border-width: 0;
+  flex: 1;
+}
+
+.header-search > input:focus {
+  outline: none;
+}
+
+.search-logo {
+  background-color: lightgray;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("https://assets.tokopedia.net/assets-tokopedia-lite/v2/zeus/kratos/af2f34c3.svg");
+}
+
+.header-cart {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  background-image: url("https://assets.tokopedia.net/assets-tokopedia-lite/v2/zeus/kratos/413cd754.svg");
+  background-position: 5px 3px;
+  background-size: 25px auto;
+  padding: 5px;
+  margin: 0 15px 0 25px;
+  background-repeat: no-repeat;
+}
+
+.header-cart:hover {
+  background-color: lightgray;
+  border-radius: 4px;
+}
+
+.header-spacer {
+  display: inline-block;
+  border-right: 1px solid grey;
+  width: 2px;
+  height: 20px;
+  margin: 0 15px 0 0;
+}
+
+.header-login,
+.header-register {
+  width: max-content;
+  padding: 5px 10px;
+  border: 2px solid green;
+  border-radius: 6px;
+}
+
+.header-login {
+  color: green;
+}
+
+.header-register {  
+  background-color: green;
+  color: white;
+  margin-left: 10px;
+}
+
+
+.body1 {
+  width: 1000px;
+  height: 400px;
+  background-color:white;
+  animation-name: example;
+  animation-duration: 10s;
+  flex: 1;
+  border: 1px black;
+  margin: 10px 20px 20px 140px;
+  align-items: center;  
+}
+
+@keyframes example {
+  0%   {background-image:url("https://images.tokopedia.net/img/cache/1190/wmEwCC/2021/5/17/9de1d7e1-e38c-4d1a-b07b-4e7c4a5acf5d.jpg.webp?ect=4g");}
+  25%  {background-image: url(https://www.toyotajakartapusat.com/promo-image-april.jpg);}
+  50%  {background-image: url(https://promo.cekresi.com/wp-content/uploads/2020/02/promo-mainan-anak.png);}
+  100% {background-image: url(https://assets.klikindomaret.com///products/promopage/Promo%20diskon%2050_000%20kosmetik%20KlikIndomaret.jpg);}
+}
+
+.main-footer{
+  border: 1px solid black;
+  text-align: center;
+  background-color: lightblue;
+  flex:  = 1;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .header1-mobile,
+  .header1,
+  .main-footer,
+  .body1 {
+    display: none;
+  }
+
+  .header1-tablet,
+  .header-search-table,
+  .body-tablet,
+  .main-footer-tablet {
+    display: block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+
+.header-logo-table {
+  display: inline-block;
+  width: 145px;
+  min-width: 145px;
+  height: 32px;
+  background-image: url("https://ecs7.tokopedia.net/assets-tokopedia-lite/v2/zeus/production/e5b8438b.svg");
+}
+
+.header-category-table {
+  padding: 5px;
+  margin: 5px 15px;
+}
+
+.header-category-table:hover {
+  background-color: lightgray;
+  border-radius: 4px;
+}
+
+.header-search-table {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding-left: 10px;
+  flex: 1;
+}
+
+.header-search-table > input {
+  border-width: 0;
+  flex: 1;
+}
+
+.header-search-table > input:focus {
+  outline: none;
+}
+
+.search-logo-table {
+  background-color: lightgray;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("https://assets.tokopedia.net/assets-tokopedia-lite/v2/zeus/kratos/af2f34c3.svg");
+}
+
+.header-cart-table {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  background-image: url("https://assets.tokopedia.net/assets-tokopedia-lite/v2/zeus/kratos/413cd754.svg");
+  background-position: 5px 3px;
+  background-size: 25px auto;
+  padding: 5px;
+  margin: 0 15px 0 25px;
+  background-repeat: no-repeat;
+}
+
+.header-cart-table:hover {
+  background-color: lightgray;
+  border-radius: 4px;
+}
+
+.header-spacer-table {
+  display: inline-block;
+  border-right: 1px solid grey;
+  width: 2px;
+  height: 20px;
+  margin: 0 15px 0 0;
+}
+
+.header-login-table,
+.header-register-table {
+  width: max-content;
+  padding: 5px 10px;
+  border: 2px solid green;
+  border-radius: 6px;
+}
+
+.header-login-table {
+  color: green;
+}
+
+.header-register-table {  
+  background-color: green;
+  color: white;
+  margin-left: 10px;
+}
+
+.body-tablet {
+  width: 725px;
+  height: 400px;
+  background-color:white;
+  animation-name: example1;
+  animation-duration: 10s;
+  flex: 1;
+  border: 1px black;
+  margin: 10px 20px 20px 20px;
+  align-items: center;  
+}
+
+@keyframes example1 {
+  0%   {background-image:url("https://images.tokopedia.net/img/cache/1190/wmEwCC/2021/5/17/9de1d7e1-e38c-4d1a-b07b-4e7c4a5acf5d.jpg.webp?ect=4g");}
+  25%  {background-image: url(https://www.toyotajakartapusat.com/promo-image-april.jpg);}
+  50%  {background-image: url(https://promo.cekresi.com/wp-content/uploads/2020/02/promo-mainan-anak.png);}
+  100% {background-image: url(https://assets.klikindomaret.com///products/promopage/Promo%20diskon%2050_000%20kosmetik%20KlikIndomaret.jpg);}
+}
+
+.main-footer-tablet{
+  border: 1px solid black;
+  text-align: center;
+  background-color: lightblue;
+  flex: 1;
+}
+
+@media only screen and (max-width: 700px) {
+  .header1-tablet,
+  .header1,
+  .main-footer,
+  .main-footer-tablet,
+  .body-tablet{
+    display: none;
+  }
+
+  .header1-mobile,
+  .header-search-mobile,
+  .main-footer-mobile,
+  .body-mobile {
+    display: block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+
+.header-logo-mobile {
+  display: inline-block;
+  width: 145px;
+  min-width: 145px;
+  height: 32px;
+  background-image: url("https://ecs7.tokopedia.net/assets-tokopedia-lite/v2/zeus/production/e5b8438b.svg");
+}
+
+.header-category-mobile {
+  padding: 5px;
+  margin: 5px 15px;
+}
+
+.header-category-mobile:hover {
+  background-color: lightgray;
+  border-radius: 4px;
+}
+
+.header-search-mobile {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding-left: 10px;
+  flex: 1;
+}
+
+.header-search-mobile > input {
+  border-width: 0;
+  flex: 1;
+}
+
+.header-search-mobile > input:focus {
+  outline: none;
+}
+
+.search-logo-mobile {
+  background-color: lightgray;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("https://assets.tokopedia.net/assets-tokopedia-lite/v2/zeus/kratos/af2f34c3.svg");
+}
+
+.header-cart-mobile {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  background-image: url("https://assets.tokopedia.net/assets-tokopedia-lite/v2/zeus/kratos/413cd754.svg");
+  background-position: 5px 3px;
+  background-size: 25px auto;
+  padding: 5px;
+  margin: 0 15px 0 25px;
+  background-repeat: no-repeat;
+}
+
+.header-cart-mobile:hover {
+  background-color: lightgray;
+  border-radius: 4px;
+}
+
+.header-spacer-mobile {
+  display: inline-block;
+  border-right: 1px solid grey;
+  width: 2px;
+  height: 20px;
+  margin: 0 15px 0 0;
+}
+
+.header-login-mobile,
+.header-register-mobile {
+  width: max-content;
+  padding: 5px 10px;
+  border: 2px solid green;
+  border-radius: 6px;
+}
+
+.header-login-mobile {
+  color: green;
+}
+
+.header-register-mobile {  
+  background-color: green;
+  color: white;
+  margin-left: 10px;
+}
+
+.body-mobile {
+  width: 600px;
+  height: 400px;
+  background-color:white;
+  animation-name: example;
+  animation-duration: 10s;
+  flex: 1;
+  border: 1px black;
+  margin: 10px 20px 20px 20px;
+  align-items: center;  
+}
+
+@keyframes example {
+  0%   {background-image:url("https://images.tokopedia.net/img/cache/1190/wmEwCC/2021/5/17/9de1d7e1-e38c-4d1a-b07b-4e7c4a5acf5d.jpg.webp?ect=4g");}
+  25%  {background-image: url(https://www.toyotajakartapusat.com/promo-image-april.jpg);}
+  50%  {background-image: url(https://promo.cekresi.com/wp-content/uploads/2020/02/promo-mainan-anak.png);}
+  100% {background-image: url(https://assets.klikindomaret.com///products/promopage/Promo%20diskon%2050_000%20kosmetik%20KlikIndomaret.jpg);}
+}
+
+.main-footer-mobile{
+  border: 1px solid black;
+  text-align: center;
+  background-color: lightblue;
+
+}
+
+
+}
